@@ -1,0 +1,28 @@
+.emojisec {
+	background-color: white;
+	padding: 0.6rem 1rem;
+	border-top: 1.5px solid rgba(0, 0, 0, 0.5);
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	gap: 1.5rem;
+	cursor: pointer;
+}
+
+.emojisec:hover {
+	background-color: whitesmoke;
+	position: relative;
+}
+.emojisec:hover::after {
+	content: 'Click to Copy Emoji';
+	position: absolute;
+	right: 1rem;
+	color: rgba(160, 185, 185, 0.8);
+}
+.emojisec:active {
+	transform: scaleX(1.007);
+	background-color: hsl(0, 0%, 90%);
+}
+.emojimg {
+	width: 35px;
+}
